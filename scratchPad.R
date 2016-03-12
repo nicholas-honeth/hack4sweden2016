@@ -30,6 +30,19 @@ shape$windAvg  <- as.numeric(meanWind)
 shape$windFactor  <- as.numeric(meanWind)/max(as.numeric(values),na.rm = TRUE)
 
 
+stationLocations <- read.csv2(file="Data/test_sites_nederbord_flaggtabell_dygn_view.csv", stringsAsFactors = F)
+
+
+currdf <- read.csv2(file="Data/weatherStations_location_code.csv", stringsAsFactors = F)
+
+
+ReadGrib("C:/Users/nicho/Dropbox/Documents/Development/QGIS/SMHI/GRIB/201601/AM25H2_201601240000+000H00M", levels, variables,
+    domain = NULL, file.type = "grib2", missing.data = NULL)
+
+
+
+
+
 
 
 #Turns the SpatialPolygons in DF
