@@ -98,12 +98,21 @@ shinyUI(navbarPage(title="Observations of regional risk for natural disasters in
                                               "Ph.D Candidate at the Royal Institute of Technology, Stockholm, Sweden",
                                               br(),
                                               "Email: honeth@kth.se",
+                                              br(),
+                                              br(),
+                                              br(),
+                                              br(),
+                                              br(),
+                                              br(),
+                                              br(),
+                                              br(),
+                                              "Hack for Sweden 12-13 March 2016",
                                               br()
                                       ),
                                      mainPanel(
                                              img(src='smhipic.jpg', align = "middle", keepAspectRatio=T, width=600),
                                              br(),
-                                             tags$em("From left to right: ? (SMHI), Daniel A. Broden (KTH), Nicholas Honeth (KTH), Rolf Brennerfelt (SMHI)")
+                                             tags$em("Left to right: ? (SMHI), Daniel A. Broden (KTH), Nicholas Honeth (KTH), Rolf Brennerfelt (SMHI)")
                                              
                                          )
                                  )
