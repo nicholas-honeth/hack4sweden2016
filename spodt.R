@@ -1,3 +1,10 @@
+
+## See http://www.inside-r.org/packages/cran/SPODT/docs/SPODT
+## See http://www.bias-project.org.uk/ASDARcourse/unit2_slides.pdf
+## From file:///C:/Users/nicho/Downloads/v63i16%20(2).pdf
+
+  
+
 data(dataMALARIA)
 #Example : number of malaria episodes per child at each household,
 #from November to December 2009, Bandiagara, Mali.
@@ -11,7 +18,7 @@ gr<-0.07   #graft parameter
 rtw<-0.01 #rtwo.min
 parm<-25  #min.parent
 childm<-2 #min.child
-lmx<-7 
+lmx<-7
 
 sp<-spodt(dataMALARIA@data[,2]~1, dataMALARIA, weight=TRUE, graft=gr, min.ch=childm,
           min.parent=parm, level.max=lmx, rtwo.min=rtw)
@@ -28,4 +35,4 @@ points(dataMALARIA,cex=log(dataMALARIA@data$z*10))
 #           min.child=childm,rtwo.min=rtw)
 
 #the warning "root is a leaf" tells that no split can be provided by the
-#spodt function according to the splitting parameters 
+#spodt function according to the splitting parameters
